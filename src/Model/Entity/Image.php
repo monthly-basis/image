@@ -5,6 +5,7 @@ class Image
 {
     public $height;
     public $imageId;
-    public $rootRelativePath;
+    public $rootRelativeUrl;
+    public $url;
     public $width;
 }

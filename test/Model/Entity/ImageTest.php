@@ -20,7 +20,8 @@ class ImageTest extends TestCase
     {
         $this->assertObjectHasAttribute('height', $this->imageEntity);
         $this->assertObjectHasAttribute('imageId', $this->imageEntity);
-        $this->assertObjectHasAttribute('rootRelativePath', $this->imageEntity);
+        $this->assertObjectHasAttribute('rootRelativeUrl', $this->imageEntity);
         $this->assertObjectHasAttribute('width', $this->imageEntity);
+        $this->assertObjectHasAttribute('url', $this->imageEntity);
     }
 }
