@@ -1,6 +1,8 @@
 <?php
 namespace LeoGalleguillos\Image;
 
+use LeoGalleguillos\Image\Model\Factory as ImageFactory;
+
 class Module
 {
     public function getConfig()
@@ -17,6 +19,9 @@ class Module
     {
         return [
             'factories' => [
+                ImageFactory\Image::class => function ($serviceManager) {
+                    return new ImageFactory\Image();
+                },
             ],
         ];
     }
