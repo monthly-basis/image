@@ -27,4 +27,17 @@ class ImageTest extends TestCase
         $this->assertObjectHasAttribute('width', $this->imageEntity);
         $this->assertObjectHasAttribute('url', $this->imageEntity);
     }
+
+    public function testGettersAndSetters()
+    {
+        $orientation = 6;
+        $this->assertSame(
+            $this->imageEntity,
+            $this->imageEntity->setOrientation($orientation)
+        );
+        $this->assertSame(
+            $orientation,
+            $this->imageEntity->getOrientation()
+        );
+    }
 }
