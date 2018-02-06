@@ -1,19 +1,22 @@
 <?php
 namespace LeoGalleguillos\ImageTest\Model\Entity;
 
-use LeoGalleguillos\Image\Model\Entity\Image as ImageEntity;
+use LeoGalleguillos\Image\Model\Entity as ImageEntity;
 use PHPUnit\Framework\TestCase;
 
 class ImageTest extends TestCase
 {
     protected function setUp()
     {
-        $this->imageEntity = new ImageEntity();
+        $this->imageEntity = new ImageEntity\Image();
     }
 
     public function testInitialize()
     {
-        $this->assertInstanceOf(ImageEntity::class, $this->imageEntity);
+        $this->assertInstanceOf(
+            ImageEntity\Image::class,
+            $this->imageEntity
+        );
     }
 
     public function testAttributes()
