@@ -17,7 +17,7 @@ class Image
     protected $url;
     protected $width;
 
-    public function getHeight() : int
+    public function getHeight()
     {
         return $this->height;
     }
@@ -37,7 +37,7 @@ class Image
         return $this->url;
     }
 
-    public function getWidth() : int
+    public function getWidth()
     {
         return $this->width;
     }
