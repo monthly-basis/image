@@ -5,12 +5,14 @@ use LeoGalleguillos\Image\Model\Entity\Image as ImageEntity;
 
 class Image
 {
-    public function buildFromArray($array)
+    public function buildFromArray(array $array)
     {
-        $imageEntity         = new ImageEntity();
-        $imageEntity->url    = $array['url']    ?? null;
-        $imageEntity->width  = $array['width']  ?? null;
-        $imageEntity->height = $array['height'] ?? null;
+        $imageEntity = new ImageEntity();
+
+        $imageEntity->setUrl($array['url'])
+                    ->setWidth($array['width'])
+                    ->setHeight($array['height']);
+
         return $imageEntity;
     }
 }

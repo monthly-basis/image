@@ -17,4 +17,17 @@ class ImageTest extends TestCase
     {
         $this->assertInstanceOf(ImageFactory\Image::class, $this->imageFactory);
     }
+
+    public function testBuildFromArray()
+    {
+        $array = [
+            'url'    => 'https://www.example.com/image.jpg',
+            'width'  => '123',
+            'height' => '456',
+        ];
+        $this->assertInstanceOf(
+            ImageEntity\Image::class,
+            $this->imageFactory->buildFromArray($array)
+        );
+    }
 }
