@@ -30,6 +30,16 @@ class ImageTest extends TestCase
 
     public function testGettersAndSetters()
     {
+        $height = 987;
+        $this->assertSame(
+            $this->imageEntity,
+            $this->imageEntity->setHeight($height)
+        );
+        $this->assertSame(
+            $height,
+            $this->imageEntity->getHeight()
+        );
+
         $orientation = 6;
         $this->assertSame(
             $this->imageEntity,
@@ -38,6 +48,26 @@ class ImageTest extends TestCase
         $this->assertSame(
             $orientation,
             $this->imageEntity->getOrientation()
+        );
+
+        $url = 'https://www.example.com/test.jpg';
+        $this->assertSame(
+            $this->imageEntity,
+            $this->imageEntity->setUrl($url)
+        );
+        $this->assertSame(
+            $url,
+            $this->imageEntity->getUrl()
+        );
+
+        $width = 123;
+        $this->assertSame(
+            $this->imageEntity,
+            $this->imageEntity->setWidth($width)
+        );
+        $this->assertSame(
+            $width,
+            $this->imageEntity->getWidth()
         );
     }
 }

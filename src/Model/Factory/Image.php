@@ -5,6 +5,12 @@ use LeoGalleguillos\Image\Model\Entity\Image as ImageEntity;
 
 class Image
 {
+    /**
+     * Build from array.
+     *
+     * @param array $array
+     * @return ImageEntity\Image
+     */
     public function buildFromArray(array $array)
     {
         $imageEntity = new ImageEntity();
