@@ -17,6 +17,11 @@ class Image
     protected $url;
     protected $width;
 
+    public function getHeight() : int
+    {
+        return $this->height;
+    }
+
     public function getOrientation() : int
     {
         return $this->orientation;
@@ -25,6 +30,22 @@ class Image
     public function getRootRelativeUrl() : string
     {
         return $this->rootRelativeUrl;
+    }
+
+    public function getUrl() : string
+    {
+        return $this->url;
+    }
+
+    public function getWidth() : int
+    {
+        return $this->width;
+    }
+
+    public function setHeight(int $height) : ImageEntity\Image
+    {
+        $this->height = $height;
+        return $this;
     }
 
     public function setOrientation(int $orientation) : ImageEntity\Image
@@ -36,6 +57,18 @@ class Image
     public function setRootRelativeUrl(string $rootRelativeUrl) : ImageEntity\Image
     {
         $this->rootRelativeUrl = $rootRelativeUrl;
+        return $this;
+    }
+
+    public function setUrl(string $url) : ImageEntity\Image
+    {
+        $this->url = $url;
+        return $this;
+    }
+
+    public function setWidth(int $width) : ImageEntity\Image
+    {
+        $this->width = $width;
         return $this;
     }
 }
