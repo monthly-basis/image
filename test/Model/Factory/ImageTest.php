@@ -29,5 +29,13 @@ class ImageTest extends TestCase
             ImageEntity\Image::class,
             $this->imageFactory->buildFromArray($array)
         );
+
+        $array = [
+            'url'    => 'https://www.example.com/image.jpg',
+        ];
+        $this->assertInstanceOf(
+            ImageEntity\Image::class,
+            $this->imageFactory->buildFromArray($array)
+        );
     }
 }
