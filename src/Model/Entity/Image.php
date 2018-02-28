@@ -5,6 +5,7 @@ use LeoGalleguillos\Image\Model\Entity as ImageEntity;
 
 class Image
 {
+    protected $extension;
     protected $height;
     protected $imageId;
 
@@ -14,8 +15,14 @@ class Image
     protected $orientation;
 
     protected $rootRelativeUrl;
+    protected $rootUrl;
     protected $url;
     protected $width;
+
+    public function getExtension() : string
+    {
+        return $this->extension;
+    }
 
     public function getHeight()
     {
@@ -27,9 +34,15 @@ class Image
         return $this->orientation;
     }
 
+
     public function getRootRelativeUrl() : string
     {
         return $this->rootRelativeUrl;
+    }
+
+    public function getRootUrl() : string
+    {
+        return $this->rootUrl;
     }
 
     public function getUrl() : string
@@ -40,6 +53,12 @@ class Image
     public function getWidth()
     {
         return $this->width;
+    }
+
+    public function setExtension(string $extension) : ImageEntity\Image
+    {
+        $this->extension = $extension;
+        return $this;
     }
 
     public function setHeight(int $height) : ImageEntity\Image
@@ -57,6 +76,12 @@ class Image
     public function setRootRelativeUrl(string $rootRelativeUrl) : ImageEntity\Image
     {
         $this->rootRelativeUrl = $rootRelativeUrl;
+        return $this;
+    }
+
+    public function setRootUrl(string $rootUrl) : ImageEntity\Image
+    {
+        $this->rootUrl = $rootUrl;
         return $this;
     }
 
