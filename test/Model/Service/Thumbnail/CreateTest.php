@@ -1,7 +1,6 @@
 <?php
 namespace LeoGalleguillos\ImageTest\Model\Service\Thumbnail;
 
-use LeoGalleguillos\Image\Model\Factory as ImageFactory;
 use LeoGalleguillos\Image\Model\Entity as ImageEntity;
 use LeoGalleguillos\Image\Model\Service as ImageService;
 use PHPUnit\Framework\TestCase;
