@@ -10,8 +10,10 @@ class Create
         ImageEntity\Image $imageEntity,
         int $width,
         string $destination
-    ) {
+    ) :ImageEntity\Image {
         $imagick = new Imagick($imageEntity->getRootUrl());
+        $imagick->scaleImage($width, 0);
+        $imagick->writeImage($destination);
 
         $thumbnail = new ImageEntity\Image();
         $thumbnail->setRootUrl($destination);
