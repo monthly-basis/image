@@ -22,6 +22,9 @@ class Module
                 ImageFactory\Image::class => function ($serviceManager) {
                     return new ImageFactory\Image();
                 },
+                ImageService\Thumbnail\Create::class => function ($serviceManager) {
+                    return new ImageService\Thumbnail\Create();
+                },
             ],
         ];
     }
