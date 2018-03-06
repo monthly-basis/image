@@ -2,6 +2,7 @@
 namespace LeoGalleguillos\Image;
 
 use LeoGalleguillos\Image\Model\Factory as ImageFactory;
+use LeoGalleguillos\Image\Model\Service as ImageService;
 
 class Module
 {
