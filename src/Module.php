@@ -3,6 +3,7 @@ namespace LeoGalleguillos\Image;
 
 use LeoGalleguillos\Image\Model\Factory as ImageFactory;
 use LeoGalleguillos\Image\Model\Service as ImageService;
+use LeoGalleguillos\Image\Model\Table as ImageTable;
 
 class Module
 {
@@ -26,6 +27,11 @@ class Module
                 ImageService\Thumbnail\Create::class => function ($serviceManager) {
                     return new ImageService\Thumbnail\Create();
                 },
+                ImageTable\Image::class => function ($serviceManager) {
+                    return new ImageTable\Image(
+                        $serviceManager->get('image')
+                    );
+                }
             ],
         ];
     }
