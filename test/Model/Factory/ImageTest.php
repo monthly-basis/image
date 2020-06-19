@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class ImageTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->imageFactory = new ImageFactory\Image();
         $this->imageEntity = new ImageEntity\Image();

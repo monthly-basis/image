@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class CreateTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->createService = new ImageService\Thumbnail\Create();
     }

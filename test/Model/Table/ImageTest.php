@@ -7,7 +7,7 @@ use Zend\Db\Adapter\Exception\InvalidQueryException;
 
 class ImageTest extends TableTestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->imageTable = new ImageTable\Image($this->getAdapter());
 
