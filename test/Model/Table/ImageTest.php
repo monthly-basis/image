@@ -2,7 +2,7 @@
 namespace LeoGalleguillos\QuestionTest\Model\Table;
 
 use LeoGalleguillos\Image\Model\Table as ImageTable;
-use LeoGalleguillos\Test\TableTestCase;
+use MonthlyBasis\LaminasTest\TableTestCase;
 use Zend\Db\Adapter\Exception\InvalidQueryException;
 
 class ImageTest extends TableTestCase
