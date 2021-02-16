@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\Image\Model\Entity;
+namespace MonthlyBasis\Image\Model\Entity;
 
-use LeoGalleguillos\Image\Model\Entity as ImageEntity;
+use MonthlyBasis\Image\Model\Entity as ImageEntity;
 
 class Image
 {

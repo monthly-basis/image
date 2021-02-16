@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\ImageTest\Model\Service\Thumbnail;
+namespace MonthlyBasis\ImageTest\Model\Service\Thumbnail;
 
-use LeoGalleguillos\Image\Model\Entity as ImageEntity;
-use LeoGalleguillos\Image\Model\Service as ImageService;
+use MonthlyBasis\Image\Model\Entity as ImageEntity;
+use MonthlyBasis\Image\Model\Service as ImageService;
 use PHPUnit\Framework\TestCase;
 
 class CreateTest extends TestCase

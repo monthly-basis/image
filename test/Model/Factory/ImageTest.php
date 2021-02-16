@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\ImageTest\Model\Factory;
+namespace MonthlyBasis\ImageTest\Model\Factory;
 
-use LeoGalleguillos\Image\Model\Factory as ImageFactory;
-use LeoGalleguillos\Image\Model\Entity as ImageEntity;
+use MonthlyBasis\Image\Model\Factory as ImageFactory;
+use MonthlyBasis\Image\Model\Entity as ImageEntity;
 use PHPUnit\Framework\TestCase;
 
 class ImageTest extends TestCase

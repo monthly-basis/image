@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\ImageTest\Model\Entity;
+namespace MonthlyBasis\ImageTest\Model\Entity;
 
-use LeoGalleguillos\Image\Model\Entity as ImageEntity;
+use MonthlyBasis\Image\Model\Entity as ImageEntity;
 use PHPUnit\Framework\TestCase;
 
 class ImageTest extends TestCase

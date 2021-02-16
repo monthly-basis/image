@@ -1,7 +1,7 @@
 <?php
 namespace LeoGalleguillos\QuestionTest\Model\Table;
 
-use LeoGalleguillos\Image\Model\Table as ImageTable;
+use MonthlyBasis\Image\Model\Table as ImageTable;
 use MonthlyBasis\LaminasTest\TableTestCase;
 use Laminas\Db\Adapter\Exception\InvalidQueryException;
 

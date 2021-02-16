@@ -1,9 +1,9 @@
 <?php
-namespace LeoGalleguillos\Image;
+namespace MonthlyBasis\Image;
 
-use LeoGalleguillos\Image\Model\Factory as ImageFactory;
-use LeoGalleguillos\Image\Model\Service as ImageService;
-use LeoGalleguillos\Image\Model\Table as ImageTable;
+use MonthlyBasis\Image\Model\Factory as ImageFactory;
+use MonthlyBasis\Image\Model\Service as ImageService;
+use MonthlyBasis\Image\Model\Table as ImageTable;
 
 class Module
 {

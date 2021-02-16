@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\Image\Model\Service\Thumbnail;
+namespace MonthlyBasis\Image\Model\Service\Thumbnail;
 
 use Imagick;
-use LeoGalleguillos\Image\Model\Entity as ImageEntity;
+use MonthlyBasis\Image\Model\Entity as ImageEntity;
 
 class Create
 {

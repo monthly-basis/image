@@ -1,5 +1,5 @@
 <?php
-namespace LeoGalleguillos\Image\Model\Table;
+namespace MonthlyBasis\Image\Model\Table;
 
 use Laminas\Db\Adapter\Adapter;
 
