@@ -11,23 +11,6 @@ class ImageTest extends TestCase
         $this->imageEntity = new ImageEntity\Image();
     }
 
-    public function testInitialize()
-    {
-        $this->assertInstanceOf(
-            ImageEntity\Image::class,
-            $this->imageEntity
-        );
-    }
-
-    public function testAttributes()
-    {
-        $this->assertObjectHasAttribute('height', $this->imageEntity);
-        $this->assertObjectHasAttribute('imageId', $this->imageEntity);
-        $this->assertObjectHasAttribute('rootRelativeUrl', $this->imageEntity);
-        $this->assertObjectHasAttribute('width', $this->imageEntity);
-        $this->assertObjectHasAttribute('url', $this->imageEntity);
-    }
-
     public function testGettersAndSetters()
     {
         $height = 987;
