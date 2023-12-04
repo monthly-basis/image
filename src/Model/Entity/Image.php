@@ -14,6 +14,9 @@ class Image
      */
     protected $orientation;
 
+    public string $prompt;
+    public string $revisedPrompt;
+
     protected $rootRelativeUrl;
     protected $rootUrl;
     protected $url;
